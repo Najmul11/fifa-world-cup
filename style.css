@@ -86,7 +86,7 @@ Section two
     background-color:rgba(22, 22, 22, 1);
     padding: 5px;
     border-radius: 5px;
-    max-width: 312px;
+    /* max-width: 312px; */
     min-width: 312px;
     height: 300px;
 }
@@ -157,10 +157,35 @@ Grid layout
 @media only screen and (max-width:688px){
     .container{
         width: 100%;
-        margin: 20px 20px;
+        margin: 20px 0;
     }
     .section-bg{
-        width: 100%;
+        border-radius: 10px;
+        padding:20px 0;
+        background-image: url(images/Banner\ Image.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position-y: 20px;
+        background-size:inherit;
     }
+    .half-width{
+        width: 80%;
+        margin:50px ;
+    }
+    .flexibility{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .navigation-container{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .articles{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap: 1%;
+    }
+    
+   
 }
 /*  tablet device */
