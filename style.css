@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&display=swap');
+
+/* --------------
+      Common 
+--------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:whitesmoke;
+    margin: 0;
+}
+.container{
+    width: 85%;
+    margin:50px auto;
+}
+/* ----------------
+     Section One
+---------------- */
+.section-bg{
+    background-color:rgb(22, 22, 22);    
+    border-radius: 20px;
+    padding:50px 0;
+    background-image: url(images/Banner\ Image.png);
+    background-repeat: no-repeat;
+    background-position-x: 960px;
+    background-position-y: 20px;
+    background-size: contain;
+}
+
+.half-width{
+    width: 50%;
+    margin: 100px;
+}
+h1{
+    font-size: 45px;
+    color: white;
+}
+.para-text{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+.link-button{
+    background-color:rgba(221, 0, 0, 1);
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: all ease-out 0.4s;
+}
+.link-button:hover{
+    box-shadow: inset 150px 0 0 0  lightyellow;
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+.fontawesome{
+    margin-left: 5px;
+    font-size: 15px;
+}
+/* ---------------
+     Animation
+--------------- */
+.section-bg:hover .fontawesome{
+    animation: left-to-right 0.9s ease-in-out  infinite forwards ;
+}
+@keyframes left-to-right {
+    100%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+/* -----------------
+Section two
+----------------- */
+/* --------------
+       aside
+---------------- */
+.flexibility{
+    display: flex; 
+    column-gap: 2%;
+}
+#mg-bottom{
+    margin-bottom: 100px;
+}
+.navigate-container{
+    background-color:rgba(22, 22, 22, 1);
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 312px;
+    min-width: 312px;
+    height: 300px;
+}
+.navigate{
+    text-decoration: none;
+    background-color: white;
+    color:black ;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 28px auto  ;
+    width: 252px;
+    height: 64px;
+    border-radius: 5px;
+}
+.navigate:hover{
+    background-color: lightgrey;
+}
+#highlight{
+    background-color:rgba(221, 0, 0, 0.9) ;
+    color: white;
+}
+#highlight:hover{
+    background-color: rgba(221, 0, 0, 1) ;
+}
+/* -------------
+Grid layout
+-------------- */
+.articles{
+    display: grid;
+    grid-template-columns:25rem 25rem 25rem;
+    grid-gap: 2.5%;
+}
+.article{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px lightgray ;
+}
+.article img{
+    width: 100%;
+}
+.article-img img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#set-margin{
+    padding: 10px;
+}
+.set-mg{
+    margin-left: 5px;
+    margin-right: 50px;
+}
+.transfer-btn{
+    border: 1px solid black;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* --------------------
+ media querryy
+--------------------- */
+/* Mobile device */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+        margin: 20px 20px;
+    }
+    .section-bg{
+        width: 100%;
+    }
+}
+/*  tablet device */
